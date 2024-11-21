@@ -1,0 +1,107 @@
+/* Estilos Generales de la página Nosotros */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #000000;
+    line-height: 1.6;
+    padding-top: 100px; /* Para que no se solape con el header fijo */
+    background: url('../img/neon\ claro.jpg') no-repeat;
+    background-size:1424px 4000px;
+    background-position: center;
+}
+
+.about-us {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.about-us h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #940101;
+}
+
+.about-us p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.mission-vision {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.mission, .vision {
+    width: 48%;
+}
+
+.mission h2, .vision h2 {
+    font-size: 2em;
+    color: #940101;
+}
+
+.mission p, .vision p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.team-member {
+    text-align: center;
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.team-img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.team-member p {
+    color: #666;
+    font-size: 1.1em;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .mission-vision {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .team {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .team-member {
+        width: 80%;
+        margin: 0 auto;
+    }
+}

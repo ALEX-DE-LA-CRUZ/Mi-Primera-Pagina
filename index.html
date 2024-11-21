@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALMACEn D&P</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/cabesera.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">ALMACEN D&P</h2>
+        <nav class="navigation">
+            <a href="index.html">Inicio</a>
+            <a href="paginas/nosotros.html">Nosotros</a>
+            <a href="paginas/ventas.html" id="comprasLink" class="disabled-link">Compras</a>
+
+            <a href="paginas/contactos.html">Contactos</a>
+            <button class="btnLogin">Login</button>
+            <button class="btnLogin" id="logoutBtn">Cerrar sesión</button>
+
+        </nav>
+    </header>
+    <div class="content-login">
+        <div class="form-login login">
+            <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+            <h2>Inicio de seciòn</h2>
+            <form action="#">
+                <div class="input-login">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <input type="text" required id="usu">
+                    <label for="">Usuario</label>
+                </div>
+                <div class="input-login">
+                    <span class="icon"><ion-icon name="lock-closed-uotline"></ion-icon></span>
+                    <input type="password" required id="contra">
+                    <label for="">Contraseña</label>
+                </div>
+                <button type="submit" class="btn" onclick="InicioSecion()">HAGA CLICK AQUI</button>
+                <div class="login-register">
+                    <p>¿Esta registrado?
+                        <a href="#" class="register-link">REGISTRARSE</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+        <div class="form-login register">
+            <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+            <h2>Nuevo Registro</h2>
+            <form action="#">
+                <div class="input-login">
+                    <span class="icon"><ion-icon name="people"></ion-icon></span>
+                    <input type="text" required>
+                    <label for="">Nombre Completo:</label>
+                </div>
+                <div class="input-login">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <input type="text" required >
+                    <label for="">Usuario</label>
+                </div>
+                <div class="input-login">
+                    <span class="icon"><ion-icon name="lock-closed-uotline"></ion-icon></span>
+                    <input type="password" required >
+                    <label for="">Contraseña</label>
+                </div>
+                <button type="submit" class="btn" >Registrarme</button>
+                <div class="login-register">
+                    <p>¿Se registro?
+                        <a href="#" class="login-link">LOGIN</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons.js"></script>
+    <script src="js/usuarios.js"></script>
+
+</html>

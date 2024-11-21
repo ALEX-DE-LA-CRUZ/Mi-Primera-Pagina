@@ -1,0 +1,113 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: url('../img/neon\ dorado.jpg') no-repeat;
+    background-size:1424px 4000px;
+    background-position: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 2em;
+    color: white;
+}
+
+.navigation a {
+    color: rgb(0, 0, 0);
+    margin-left: 40px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navigation a:hover {
+    color: #34d4d4;
+}
+
+
+
+.btnLogin:hover {
+    background-color: #000000;
+    border-color: #34d4d4;
+}
+
+main {
+    margin-top: 120px;
+    padding: 20px;
+}
+
+.contact-info, .contact-form, .social-media {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2, .contact-form h2, .social-media h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin: 10px 0;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    background-color: #34d4d4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #28a9a9;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media ul li {
+    margin: 10px 0;
+}
+
+.social-media ul li a {
+    color: #34d4d4;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.social-media ul li a:hover {
+    color: #28a9a9;
+}
